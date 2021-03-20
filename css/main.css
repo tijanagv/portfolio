@@ -644,13 +644,6 @@ to {
     color: var(--yellow);
   }
 
-  
-
-  /* .width img {
-    width: 65%;
-  } */
-
-
   /* Responsive Design Break PointS */
 
   @media screen and (min-width: 2000px) {
@@ -692,9 +685,7 @@ to {
       }
 
       #contact p,
-      #contact h3 {font-size: 28px;}
-
-    
+      #contact h3 {font-size: 28px;} 
 
   }
 
