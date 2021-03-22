@@ -695,9 +695,7 @@ to {
   header hr {display: none;}
 
   header .logo img {
-    width: 35px;
-    
-    
+    width: 35px; 
   }
 
   #hamburger-menu {
@@ -713,7 +711,6 @@ to {
   }
 
   .show {display: none;}
-
 
   #navigation ul {
     display: flex;
@@ -754,7 +751,7 @@ to {
   .white-circle {
     position: absolute;
     right: 50px;
-    top: 450px;
+    top: 300px;
     width: 20%;
   }
 
@@ -860,7 +857,7 @@ to {
 }
 
 .project-hero .subhead h2 {
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .project-hero img {
@@ -920,7 +917,7 @@ to {
   }
 
   #about .about_text {
-    padding: 50px 30px;
+    padding: 50px 70px;
     text-align: center;
     width: 100%;
   }
@@ -931,7 +928,7 @@ to {
   }
 
   #about img {
-    width: 80%;
+    width: 70%;
     margin-top: 20px;
   }
 
@@ -950,9 +947,13 @@ to {
     margin-bottom: 20px;
   }
 
+  header .logo { 
+    position: relative;
+    left: -20px;
+  }
+
   header .logo img {
     width: 25px;
-  
   }
 
   #hamburger-menu {
@@ -966,27 +967,24 @@ to {
     height: 35px;
   }
 
-  header nav ul {
+  #navigation ul {
     width: 100%;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     position: relative;
-    top: 10vh;
-    right: 0;   
-
+    top: 14vh;
+    right: 0; 
+    padding: 0;  
   }
+
+  #navigation ul li {text-align: right;}
 
   #navigation a {
     width: 100%;
     font-size: 15px;
   }
 
-  /* .show {display: flex;} */
-
-
   /* Hero Section */
-
  
   #hero .hero-wrap {
     margin: 0 auto;
@@ -1000,6 +998,7 @@ to {
 
   #hero .text, #hero .hero-img {
     width: 100%;
+    padding-left: 35px;
   }
 
   #hero .hero-img img {
@@ -1088,7 +1087,7 @@ to {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 10px auto; */
+    margin: 20px auto;
   }
 
   #projects .project-info {
@@ -1101,7 +1100,7 @@ to {
   .scnd-project-img,
   .trd-project-img,
   .fourth-project-img {
-    height: 80vh;
+    height: 50vh;
     width: 100%;
   }
 
@@ -1153,7 +1152,6 @@ to {
   }
 
   #about img {
-    width: 90%;
     margin-top: 20px;
   }
 
@@ -1177,7 +1175,6 @@ footer a {
   font-size: 14px;
   margin: 0 20px;
 }
-
 
 
 /* Projects Hero Section */
@@ -1209,8 +1206,6 @@ footer a {
   
 }
 
-
-
 /* Projects Info */
 
 .project-info {width: 100%;}
@@ -1222,7 +1217,6 @@ footer a {
 
 .project-info .info div {
   width: 80%;
-  padding: 20px;
   margin: 20px;
 }
 
@@ -1234,8 +1228,8 @@ footer a {
 }
 
 .project-info .show-img img {
- width: 500px;
- margin: 0 20px;
+  width: 90%;
+  margin: 0 20px;
 }
 
 .center {
@@ -1253,12 +1247,31 @@ footer a {
 
 @media screen and (max-width: 480px) {
 
-  #hamburger-menu {
-    top: 20px;
+  #hamburger-menu {top: 20px;}
+
+  #navigation ul {
+    position: relative;
+    top: 13vh; 
   }
 
-  .project-info .info div {
-    padding: 0;
+  #navigation ul li {padding: 0;}
+
+  #navigation ul li a {padding: 5px 30px 5px 5px;}
+
+  header .logo {
+    position: relative;
+    left: -20px;
   }
+
+  #hero .text {padding-left: 30px;}
+
+  .project-info .info div {padding: 0;}
+
+  .project-hero .subhead {
+    position: relative;
+    left: 50%;
+  }
+
+  .project-hero .subhead h2 {font-size: 14px;}
   
  }
