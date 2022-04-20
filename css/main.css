@@ -360,15 +360,14 @@ nav ul li a:hover {
 
 .skills .cards article {
   width: 30%;
-  /* height: 720px; */
-  background-color: #D9E2DD;
+  height: 720px;
+  background-color: #D1E1E6;
   margin-left: 50px;
   margin-right: 50px;
   /* padding: 50px; */
 }
 
-
-.skills .different {
+.skills .card-different {
   margin-top: 250px;
 }
 
@@ -382,19 +381,26 @@ nav ul li a:hover {
   margin-top: -150px;
 }
 
-.skills .card-bottom {
+.skills .card-top-one img {
   position: relative;
-  top: 20px;
+  right: -50px;
+}
+
+.skills .card-bottom {
+  background-color: #A5C9D4;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills .card-different .card-bottom {
+  background-color: #BDCDC5;
 }
 
 
-.skills article .card-bottom img {
-  width: 100%;
-}
-
-.skills article .card-bottom .overlay-text {
-  position: absolute;
-  top: 55px;
+.skills article .card-bottom p {
+  /* position: absolute;
+  top: 55px; */
   padding: 0 50px;
   margin: 0 auto;
   text-align: center;
@@ -403,12 +409,13 @@ nav ul li a:hover {
   line-height: 22px;
 }
 
-.skills article .card-bottom .overlay-text img {
+.skills article .card-bottom img {
   width: 30px;
   padding-bottom: 5px;
+  display: inline-block;
 }
 
-.skills .cards .article-text {padding: 50px;}
+.skills .cards .article-text {padding: 20px 50px;}
 
 .skills .cards h3 {
   font-family: 'metropolis';
@@ -441,7 +448,7 @@ mark {
 
 #projects,
 #about {
-  margin: 0 auto;
+  margin: 250px auto 0 auto;
   text-align: left;
   padding: 50px 0;
   max-width: var(--max-width);
@@ -472,7 +479,7 @@ mark {
  }
 
  .trd-project-img {
-  background: url(./img/Mask\ Group.png) no-repeat center/cover;
+  background: url(./img/Cover-other.png) no-repeat center/cover;
  }
 
 #projects .project-info {
@@ -509,7 +516,7 @@ mark {
 
 #projects .project-info h3 {
   color: #A88506;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
@@ -602,7 +609,7 @@ mark {
   }
 
   .other-project-hero .container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -829,10 +836,18 @@ top: 100px;
    padding: 50px 0 100px 0;
  }
 
- .empathyze article img {
-   width: 70%;
-   padding-top: 120px;
+ .empathyze article .personas-bg {
+   background-color: #D9E2DD;
+   margin: 50px 0;
  }
+
+ .empathyze article .personas-bg img {width: 60%;}
+
+ .empathyze article img {
+   width: 80%;
+   padding: 80px 0 100px 0;
+  }
+
 
  .empathyze .feedback .photo-small {
   width: 70%;
@@ -871,10 +886,14 @@ top: 100px;
 
   #about {
     background: url(./img/blue-div.png) no-repeat center/auto;
+    padding: 0 0 100px 0;
+    height: 90vh;
+  }
+
+  #about .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
   }
 
   .about-info {
@@ -925,19 +944,23 @@ top: 100px;
 
   #contact  {
     padding: 200px 0;
-    display: flex;
     width: var(--max-width);
     margin: 0 auto;
+  }
+
+  #contact .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   #contact hr {
-    width: 200px;  
+    width: 200px; 
+    height: 2px; 
   }
 
   #contact img {
-    width: 25%;
+    width: 80%;
   }
 
   #contact .contact-number {display: flex;}
@@ -1042,6 +1065,10 @@ top: 100px;
       padding: 50px 50px 0 0;
     }
 
+    #about {
+      height: auto;
+    }
+
       #about p,
       footer p {
         font-size: 18px;
@@ -1057,6 +1084,8 @@ top: 100px;
       #contact p,
       #contact h3 {font-size: 20px;} 
 
+    
+
   }
 
 @media screen and (max-width: 1370px) {
@@ -1067,7 +1096,7 @@ top: 100px;
   #projects,
   #about,
   #contact {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     padding: 100px 0 50px 0;
   }
 
@@ -1173,14 +1202,6 @@ top: 100px;
   padding: 30px 35px;
 }
 
-.card-bottom p {
-  position: absolute;
-  top: 28px;
-}
-
-.skills article .card-bottom .overlay-text {
-  top: 17%;
-}
 
 
   /* Projects  */
@@ -1205,12 +1226,13 @@ top: 100px;
 
 /* About */
 
+#about {height: 80vh;}
+
 .about-info {
-  width: 60%;
-  
+  width: 60%;  
 }
 
-.about-photo {width: 40%;}
+.about-photo {width: 50%;}
 
 #about img {
   width: 100%;
@@ -1352,7 +1374,9 @@ top: 100px;
  .project-intro article img,
  .research article img {width: 80%;} 
 
- .empathyze article img {width: 90%;}
+ .empathyze article .personas-bg img {width: 60%;}
+ .empathyze article img {width: 80%;}
+ .empathyze article .feedback .photo-small {width: 90%;}
 
  .showcase-photo img {width: 100%;}
 
@@ -1371,9 +1395,13 @@ top: 100px;
   .skills,
   #projects,
   #about,
-  #contact {
+  #contact,
+  .container {
     max-width: 600px;
   }
+
+  #projects,
+  #about {margin-top: 0;}
 
   #projects h2,
   #about h2,
@@ -1523,7 +1551,11 @@ top: 100px;
     right: 15px;
   }
 
-  #about {display: block;}
+  #about {
+    display: block;
+    height: auto;
+    margin-top: 0;
+  }
 
   #about .container {
     padding: 20px 0;
@@ -1555,6 +1587,8 @@ top: 100px;
   #contact h1 {
     letter-spacing: 0;
   }
+
+  #contact img {display: none;}
 
   /**** Project Page ****/
 
@@ -1589,9 +1623,12 @@ top: 100px;
   .project-hero-img {
     width: 100%;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   .project-hero-img img {margin: 0 auto;}
+
+  .showcase-photo {padding-bottom: 0px;}
 
   .showcase-photo img {width: 110%;}
 
@@ -1601,6 +1638,19 @@ top: 100px;
 
   .research-info .container,
   .analysis .wrap {display: block;}
+
+  .research .container p {padding-bottom: 50px;}
+
+  .research img {
+  width: 70%;
+  position: relative;
+  top: -30px;
+}
+
+  .research-info {
+    padding-top: 90px;
+    margin-top: -120px;
+  }
 
   .research-info .container article { 
     width: 100%;
@@ -1615,6 +1665,12 @@ top: 100px;
  .research-insights img {
   display: none;
  }
+
+ .empathyze article {padding-bottom: 50px;}
+
+ .empathyze article .personas-bg img {
+  width: 90%;
+}
 
  .empathyze article img {
    width: 100%;
@@ -1860,6 +1916,8 @@ footer a {
 
 /* Projects Hero Section */
 
+.project-hero-text {padding-top: 100px;}
+
 .project-hero .subhead {
   width: 50%;
 }
@@ -1922,16 +1980,22 @@ footer a {
 }
 /**** Project Page ****/
 
+.research .container p {padding-bottom: 0;}
 .research img { width: 70%;}
 .research-info {margin-top: -100px;}
 
+.empathyze {margin-top: 100px;}
 .empathyze .demo p {padding-right: 0;}
-.empathyze article {padding-bottom: 100px;}
+.empathyze article {padding: 0;}
 
 .video-project video {
   padding: 50px 0;
   width: 60%;
 }
+
+footer p,
+footer .button,
+footer a {margin: 0 auto;}
 
 }
 }
@@ -1977,8 +2041,15 @@ footer a {
 
   .skills .cards {padding-bottom: 0;}
 
-  .skills .cards,
-  .skills .cards article {width: 100%;}
+  .skills .cards article {
+    width: 100%;
+    height: auto;
+    margin: 140px 0;}
+
+  .skills .cards .article-text {
+      padding: 20px 40px;
+    }
+
   .skills article .card-top {right: -23%;}
   .skills article .card-top img {width: 50%;}
   .skills .cards .headline {margin-left: 50px;}
@@ -2017,6 +2088,7 @@ footer a {
     padding-top: 0;
     padding-left: 10px;
     letter-spacing: 1.5px;
+    font-family: 'metropolis-semibold';
   }
 
   #projects .project-info .btn {
@@ -2034,6 +2106,7 @@ footer a {
   .project-hero .subhead {
     position: relative;
     left: 50%;
+    padding-bottom: 0;
   }
 
   .demo p {padding: 5px 0;}
@@ -2044,7 +2117,10 @@ footer a {
 
   #contact img {display: none;}
 
-  .project-hero .subhead h2 {font-size: 14px;}
+  .project-hero .subheading h2 {font-size: 14px;}
+  .project-hero-text .subheading {text-transform: none;}
+
+  .project-hero-bottom {margin-top: 60px;}
 
   .project-hero .wrap,
   .showcase-photo,
@@ -2058,6 +2134,10 @@ footer a {
   .project-intro h2,
   .research h2,
   .empathyze h2 {font-size: 28px;}
+
+  .project-intro .intro-text h3,
+  .research h3,
+  .empathyze h3 {text-transform: none;}
 
   .project-intro .statement {display: block;}
 
@@ -2080,6 +2160,8 @@ footer a {
 
  @media screen and (max-width: 375px) {
 
+  .btn {font-family: 'metropolis-bold';}
+  
   #navigation ul {
     top: 130px;
     right: 5px;
@@ -2091,20 +2173,22 @@ footer a {
   }
 
   #hero p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
-    text-transform: lowercase;
+    text-transform: none;
     letter-spacing: 1px;
+    font-family: 'metropolis-semibold';
+    padding-bottom: 5px;
   }
 
   .skills h3 {font-size:16px;}
   .skills p {font-size: 14px;}
 
 
-  .skills article .card-bottom .overlay-text {
-    top: 18%;
-  }
-
+  .skills .cards {width: 90%;}
+  .skills .cards .card-top img {width: 60%;}
+  .skills .card-top-one img {right: -9px;}
+  
   #projects article {
     height: 60vh;
   }
@@ -2151,6 +2235,13 @@ footer a {
  .showcase-photo,
  .project-intro,
  .container {max-width: 350px;}
+
+ .project-intro .flex {display: block;}
+ .project-intro .flex div {
+   width: 90%;
+   padding: 20px 0;
+  }
+
   
   .project-hero h1,
   .other-project-hero h1 {
@@ -2172,7 +2263,7 @@ footer a {
       line-height: 20px;
       text-transform: none;
     }
-
+    .research {padding-top: 50px;}
     .research img {width: 95%;}
     .research-info {margin-top: -80px;}
     .research-info article {
@@ -2186,5 +2277,6 @@ footer a {
     .research-insights img {padding: 20px 0;}
 
     .empathyze {margin-top: 50px;}
+    .empathyze .demo p {padding: 15px 0;}
 
  }
