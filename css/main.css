@@ -1930,6 +1930,7 @@ footer a {
   margin: 0 20px;
 }
 
+/**** Project Page ****/
 
 /* Projects Hero Section */
 
@@ -1995,7 +1996,7 @@ footer a {
   width: 350px;
   padding: 0 10px;
 }
-/**** Project Page ****/
+
 
 .research .container p {padding-bottom: 0;}
 .research img { width: 70%;}
@@ -2150,6 +2151,9 @@ footer a {margin: 0 auto;}
   .project-intro,
   .container {max-width: 420px;}
 
+  .research {padding-top: 100px;}
+  .research .container article {padding-top: 30px;}
+
   .project-intro p,
   .research p,
   .empathyze p {font-size: 15px;}
@@ -2161,6 +2165,13 @@ footer a {margin: 0 auto;}
   .project-intro .intro-text h3,
   .research h3,
   .empathyze h3 {text-transform: none;}
+
+  .intro-text .flex {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .intro-text .flex div {width: 100%;}
 
   .project-intro .statement {display: block;}
 
