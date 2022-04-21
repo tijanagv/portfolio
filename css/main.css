@@ -472,14 +472,14 @@ mark {
 }
 
 .first-project-img {
-  background: url(./img/partajmer\ card.png) no-repeat center/cover;
+  background: url(./img/home-page/partajmer\ card.png) no-repeat center/cover;
 }
  .scnd-project-img {
-  background: url(./img/taste-card.jpg) no-repeat center/cover;
+  background: url(./img/home-page/taste-card.jpg) no-repeat center/cover;
  }
 
  .trd-project-img {
-  background: url(./img/Cover-other.png) no-repeat center/cover;
+  background: url(./img/project-page/cover-other.png) no-repeat center/cover;
  }
 
 #projects .project-info {
@@ -972,7 +972,7 @@ top: 100px;
   footer {
     width: 100%;
     margin: 0 auto;
-    background: url(./img/Footer\ bckg.jpg);
+    background: url(./img/home-page/Footer\ bckg.jpg);
     padding: 40px 0;
     text-align: center;
   }
@@ -1500,22 +1500,19 @@ top: 100px;
   .skills .cards p {padding-top: 14px;}
   .skills article .card-top img {width: 40%;}
 
-  .skills article .card-bottom img {
-    display: none;
-  }
 
   .skills article .card-bottom {
     background-color: #A5C9D4;
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .skills .headline img {
     margin-top: 40px;
-  }
-
-  .skills article .card-bottom .overlay-text {
-    top: 25%;
   }
 
   #projects article {
@@ -1704,6 +1701,16 @@ top: 100px;
 
 @media screen and (max-width: 680px) {
 
+  #hero,
+  .skills,
+  #projects,
+  #about,
+  #contact,
+  .container,
+  footer {
+    max-width: 500px;
+  }
+
   h2 {font-size: 22px;}
 
   p {font-size: 12px;}
@@ -1771,18 +1778,28 @@ top: 100px;
     padding: 30px 0;
   }
 
+  .skills .cards article {
+    width: 100%;
+    height: auto;
+  }
+
   .skills article .card-top {
     right: -30%;
+  }
+
+  .skills article .card-top-one {
+    right: -20%;
   }
 
   .skills article .card-top img {width: 60%;}
 
   .skills .headline img {width: 150px;}
 
-  .skills article .card-bottom .overlay-text {
-    top: 22%;
-    left: -2%;
+  .skills .cards .article-text {
+    padding: 20px 40px;
   }
+
+
 
   /* Projects Section */
 
@@ -2053,12 +2070,8 @@ footer a {margin: 0 auto;}
   .skills article .card-top {right: -23%;}
   .skills article .card-top img {width: 50%;}
   .skills .cards .headline {margin-left: 50px;}
-  .skills article .card-bottom .overlay-text {
-    top: 25%;
-    padding: 0 100px;
-  }
-
   .skills div {padding: 0;}
+  .skills article .card-bottom img {display: none;}
 
   #projects h2,
   #about h2,
@@ -2075,7 +2088,11 @@ footer a {margin: 0 auto;}
   
   .project-info .info div {padding: 0;}
 
-  #projects .project-info {text-align: center;}
+  #projects .project-info {
+    text-align: center;
+    height: 250px;
+  }
+
 
   #projects .project-info h4 {font-size:12px;}
   #projects .project-info h2 {
@@ -2097,6 +2114,12 @@ footer a {margin: 0 auto;}
   }
 
   #projects .project-info .number {font-size: 90px;}
+
+  .first-project-img,
+  .scnd-project-img,
+  .trd-project-img {
+    height: 300px;
+  }
 
   .project-hero {height: auto;}
   .project-hero-text {padding: 50px 25px;}
