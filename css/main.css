@@ -386,6 +386,11 @@ nav ul li a:hover {
   right: -50px;
 }
 
+.skills .headline img {
+  position: relative;
+  left: 40px;
+}
+
 .skills .card-bottom {
   background-color: #A5C9D4;
   margin: 0 auto;
@@ -885,7 +890,7 @@ top: 100px;
   /* About Section */
 
   #about {
-    background: url(./img/blue-div.png) no-repeat center/auto;
+    background: url(./img/home-page/blue-div.png) no-repeat center/auto;
     padding: 0 0 100px 0;
     height: 90vh;
   }
