@@ -1798,7 +1798,12 @@ top: 100px;
 
   .skills article .card-top img {width: 60%;}
 
-  .skills .headline img {width: 150px;}
+  .skills .headline img {
+    width: 150px;
+    left: 0;
+  }
+
+
 
   .skills .cards .article-text {
     padding: 20px 40px;
